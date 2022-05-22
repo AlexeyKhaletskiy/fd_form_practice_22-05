@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+body {
+  background-color: #63738a;
+}
+a {
+  text-decoration: none;
+}
+.register{
+  max-width: 600px;
+  margin: auto;
+  padding: 35px 30px;
+  background-color: #f2f3f7;
+}
+
+
+.flex-row{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.title{
+  align-items: center;
+  margin-bottom: 30px;
+  color: #636363;  
+  font-size: 2.2em;
+  text-transform: capitalize;
+
+}
+.title::before,
+.title::after{
+  content:"";
+  border-bottom: 2px solid #c2c2c2;
+  flex-grow: 1;
+}
+
+
+.flex-column{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.title::before{
+  margin-right: 20px;
+}
+.title::after{
+  margin-left: 20px;
+}
+
+
+.description{
+  margin-bottom: 35px;
+  color: #706f6f;
+  font-size: 1.2em;
+  text-align: center;
+}
+.register-form{
+  min-height: 500px;
+  
+}
+.register-form input:not([type="checkbox"]){
+  padding: 0.8em 1em;
+  border: 1px solid #706f6f;
+  border-radius: 3px;
+  outline: 1px solid #706f6f;
+  font-size: 1.4em;
+  text-transform: capitalize;
+}
+
+.register-form input:focus:not([type="checkbox"]){
+  border: 2px solid #706f6f;
+  border-radius: 3px;
+  outline: 2px solid #706f6f;
+}
+
+::placeholder{
+  color: #706f6f;
+}
+
+.username-wrapper{
+
+}
+.username-wrapper label:first-child{
+  margin-right: 30px;
+}
+.username-wrapper input {
+  width: 100%;
+}
+
+.form-link{
+
+}
+.sign-in{
+
+}
+.sign-link{
+
+}
