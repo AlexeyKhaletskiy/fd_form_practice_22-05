@@ -13,60 +13,54 @@ body {
 a {
   text-decoration: none;
 }
-.register{
+.register {
   max-width: 600px;
   margin: auto;
   padding: 35px 30px;
   background-color: #f2f3f7;
 }
 
-
-.flex-row{
+.flex-row {
   display: flex;
   justify-content: space-between;
 }
 
-
-.title{
+.title {
   align-items: center;
   margin-bottom: 30px;
-  color: #636363;  
+  color: #636363;
   font-size: 2.2em;
   text-transform: capitalize;
-
 }
 .title::before,
-.title::after{
-  content:"";
+.title::after {
+  content: "";
   border-bottom: 2px solid #c2c2c2;
   flex-grow: 1;
 }
 
-
-.flex-column{
+.flex-column {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-.title::before{
+.title::before {
   margin-right: 20px;
 }
-.title::after{
+.title::after {
   margin-left: 20px;
 }
 
-
-.description{
+.description {
   margin-bottom: 35px;
   color: #706f6f;
   font-size: 1.2em;
   text-align: center;
 }
-.register-form{
+.register-form {
   min-height: 500px;
-  
 }
-.register-form input:not([type="checkbox"]){
+.register-form input:not([type="checkbox"]) {
   padding: 0.8em 1em;
   border: 1px solid #706f6f;
   border-radius: 3px;
@@ -75,32 +69,47 @@ a {
   text-transform: capitalize;
 }
 
-.register-form input:focus:not([type="checkbox"]){
+.register-form input:focus:not([type="checkbox"]) {
   border: 2px solid #706f6f;
   border-radius: 3px;
   outline: 2px solid #706f6f;
 }
 
-::placeholder{
+::placeholder {
   color: #706f6f;
 }
 
-.username-wrapper{
-
-}
-.username-wrapper label:first-child{
+.username-wrapper label:first-child {
   margin-right: 30px;
 }
 .username-wrapper input {
   width: 100%;
 }
-
-.form-link{
-
+input[type="checkbox"] {
+  margin-right: 12px;
 }
-.sign-in{
-
+.checkbox {
+  color: #706f6f;
+  font-size: 1.2em;
 }
-.sign-link{
+.form-link {
+  color: #4fa74f;
+}
+.register-form input[type="submit"] {
+  background-color: #4fa74f;
+  border: none;
+  outline: none;
+  color: white;
+  cursor: pointer;
+  font-weight: 900;
+}
 
+.register-form input:focus[type="submit"]{
+  border: none;
+  outline: none;
+}
+
+.sign-in {
+}
+.sign-link {
 }
